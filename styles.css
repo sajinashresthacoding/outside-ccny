@@ -175,6 +175,11 @@ hr {
         height: 400px; /* Adjust height for mobile devices */
     }
 
+    .car-fix{
+        max-width: 100%;
+        height: auto;
+    }
+
     .vertical-align {
         padding-top: 30%;
     }
