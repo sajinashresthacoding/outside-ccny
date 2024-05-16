@@ -175,11 +175,6 @@ hr {
         height: 400px; /* Adjust height for mobile devices */
     }
 
-    .car-fix{
-        width: 100vw; /* Set the width to 100% of the viewport width */
-        height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-        max-width: 100%; /* Ensure the image doesn't exceed its original size */
-    }
 
     .vertical-align {
         padding-top: 30%;
