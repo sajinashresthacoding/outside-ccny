@@ -173,7 +173,7 @@ hr {
 @media only screen and (max-width: 600px) {
     .carousel {
         height: auto; /* Adjust height for mobile devices */
-        max-width: max-content;
+        max-width: 450px;
     }
 
     .carousel-item {
@@ -182,7 +182,22 @@ hr {
         width: 100%;
 
     }
-    
+
+    #carouselExampleIndicators {
+        height: 400px;
+        width: auto;
+    }
+
+    .fix-wd {
+        width: 300px;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+    .car-fix {
+        height: auto;
+        width: 450x;
+    }
+
      .carousel-item img {
         width: 100%;
         }
