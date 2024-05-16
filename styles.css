@@ -189,12 +189,12 @@ hr {
     }
 
     .fix-wd {
-        width: fit-content;
+        width: fit-content !important;
         margin-left: auto;
         margin-right: auto;
     }
     .car-fix {
-        padding-top: 30%;
+        padding-top: 30% !important;
         height: auto;
         width: 450x;
     }
