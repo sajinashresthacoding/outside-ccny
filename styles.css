@@ -172,7 +172,13 @@ hr {
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
     .carousel {
-        height: 400px; /* Adjust height for mobile devices */
+        height: auto; /* Adjust height for mobile devices */
+        max-width: max-content;
+    }
+
+    .carousel-item {
+        overflow: hidden;
+
     }
 
 
