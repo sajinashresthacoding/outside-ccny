@@ -176,7 +176,7 @@ hr {
     }
 
     .car-fix{
-        width: 50%;
+        max-width: 100%;
         height: auto;
     }
 
