@@ -1,0 +1,318 @@
+
+/* General body styling */
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #f8f5f0;
+    background-color: #4E6600;
+}
+
+/* original green: #546e00 */
+
+/* Headline styling */
+.headline {
+    text-align: center;
+    color: inherit;
+    margin-bottom: 0;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 2px solid #9CCC00;
+  }
+
+
+/* Image styling - making images responsive */
+img {
+    /* width: 100%; Ensures images are responsive */
+    /* height: auto; */
+    max-width: 100%; 
+    height: auto; 
+    max-height: 500px;
+}
+
+/* .img-column {
+    margin-right: -100px;
+} */
+
+.mid-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+h1, h2, h3, h5, p {
+    color: #F5F0E3;
+}
+
+.h4-stylings {
+    font-weight: 100;
+    color: #bfbdb9;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2.mb-3{
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* Centering images and text */
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.h1-center {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container:hover video {
+    transform: scale(1.2); /* Increase the scale factor as desired */
+    z-index: 1; /* Ensure the hovered video is on top */
+}
+
+video {
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Default styles for the carousel */
+.carousel {
+    width: 100%; /* Set the width to fill the container */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Set position for absolute positioning of images */
+}
+
+.carousel img {
+    width: auto; /* Set auto width for images */
+    height: 100%; /* Set 100% height to fill the carousel container */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center images horizontally */
+}
+
+
+/* Flexbox for media content */
+.media_boxa, .media_boxb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* .div1, .div2, .div3, .div4, .div5, .div6 {
+    flex: 1 1 300px; Flexibility with minimum width of 300px
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #f00000; Keeping user's specific border styling
+} */
+
+
+/* Text adjustments */
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.desc-text {
+    height: auto; 
+    font-size: 0.9em; 
+    text-align: justify;
+    font-weight: 300;
+    word-break: break-all;
+
+
+}
+
+
+
+/* Modifications for captions under images */
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Forms and videos styling within forms */
+form {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #9CCC00;  /* old IE */
+    background-color: #9CCC00;  /* Modern Browsers */
+  }
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 787px) {
+    .carousel {
+        height: 400px; /* Adjust height for mobile devices */
+    }
+
+    .vertical-align {
+        padding-top: 30%;
+    }
+
+    br.laptop-view {
+        display: none;
+    }
+
+    .h4-stylings {
+        font-size: large;
+    
+    }
+
+    .portrait-smaller{
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+
+    .text-center-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    h1 {
+        font-size: 2em;
+    } 
+
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .order-md-1 {
+        order: 1; 
+    }
+    .order-md-2 {
+        order: 4; 
+    }
+    .order-md-3 {
+        order: 2; 
+    }
+    .order-md-4 {
+        order: 3; 
+    }
+
+    .order-md-5 {
+        order: 6; 
+    }
+
+    .order-md-6 {
+        order: 5; 
+    }
+
+    .order-md-7 {
+        order: 7; 
+    }
+
+    .order-md-8 {
+        order: 8;
+    }
+
+    .order-md-9 {
+        order: 11;
+    }
+
+    .order-md-10 {
+        order: 9;
+    }
+
+    .order-md-11{
+        order: 10;
+    }
+
+    .first-column{
+        display:flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+  
+    }
+        .top {
+            order: 1;
+        }
+        .bottom {
+            order: 2;
+        }
+    .margin-top {
+        margin-top: 10% ;
+    }
+
+    .text-neg {
+        margin-top: -60px !important;
+    }
+
+    .padding-bottom{
+        padding-top: 10%;
+    }
+
+    .text-center{
+        font-size: .9em;
+    }
+
+    .padding-2 {
+        padding-top: 5%;
+    }
+
+    /* .car-fix {
+        padding-top: 20% 
+    } */
+
+    
+}
+
+/* Additional styles for laptops/desktops */
+@media only screen and (min-width: 768px) {
+    .carousel {
+        height: 500px; /* Adjust height for laptops/desktops */
+    }
+
+    .margin-top {
+        margin-top: 40% !important ;
+    }
+    
+    .padding-bottom {
+        padding-bottom: 15% !important;
+    }
+
+    .padding-top {
+        padding-top: 30% !important;
+    }
+
+    .padding-2{
+        padding-top: 20%;
+    }
+}
+
