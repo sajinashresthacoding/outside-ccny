@@ -177,14 +177,15 @@ hr {
     }
 
     .carousel-item {
+        height: 300px;
         overflow: hidden;
+        width: 100%;
 
     }
-
-
-    .vertical-align {
-        padding-top: 30%;
-    }
+    
+     .carousel-item img {
+        width: 100%;
+        }
 
     br.laptop-view {
         display: none;
