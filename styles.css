@@ -102,11 +102,18 @@ video {
     position: relative; /* Set position for absolute positioning of images */
 }
 
-.carousel img {
-    width: auto; /* Set auto width for images */
-    height: 100%; /* Set 100% height to fill the carousel container */
-    display: block; /* Remove any default inline spacing */
-    margin: 0 auto; /* Center images horizontally */
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -176,32 +183,10 @@ hr {
         max-width: 450px;
     }
 
-    /* .carousel-item {
-        height: 300px;
-        overflow: hidden;
-        width: 100%;
-
-    } */
-
     #carouselExampleIndicators {
         height: 400px;
         width: auto;
     }
-
-    .fix-wd {
-        width: 450px !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .car-fix {
-        padding-bottom: 45% !important;
-        height: auto;
-        width: 450x;
-    }
-
-     .carousel-item img {
-        width: 100%;
-        }
 
     br.laptop-view {
         display: none;
